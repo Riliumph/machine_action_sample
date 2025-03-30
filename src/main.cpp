@@ -7,8 +7,10 @@ main()
   Forklift3Way forklift;
   Drone drone;
 
-  forklift.AddAction(std::make_unique<Run>());
-  drone.AddAction(std::make_unique<Fly>());
+  forklift.AddAction(std::make_shared<Move>());
+  forklift.AddAction(std::make_shared<Run>());
+  forklift.AddAction(std::make_shared<Fly>());
+  drone.AddAction(std::make_shared<Fly>());
 
   std::cout << "Forklift executing actions:" << std::endl;
   forklift.Execute();
