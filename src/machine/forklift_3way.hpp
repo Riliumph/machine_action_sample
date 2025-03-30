@@ -9,7 +9,7 @@ public:
   ~Forklift3Way() {};
   void AddAction(std::shared_ptr<Action> action) override
   {
-    if (dynamic_cast<Move*>(action.get())) {
+    if (dynamic_cast<Move*>(action.get()) != nullptr) {
       actions_.push_back(std::shared_ptr<Run>());
     } else {
       actions_.push_back(std::move(action));
