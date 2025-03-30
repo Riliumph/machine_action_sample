@@ -4,7 +4,7 @@
 #include <memory>
 #include <vector>
 // original
-#include "action/action_if.hpp"
+#include "action.hpp"
 class ActionController
 {
 public:
@@ -36,7 +36,7 @@ public:
     }
   };
 
-private:
+protected:
   std::vector<std::shared_ptr<Action>> actions_;
 };
 

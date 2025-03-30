@@ -1,10 +1,10 @@
-#ifndef INCLUDE_ACTION_FLY_HPP
-#define INCLUDE_ACTION_FLY_HPP
-#include "action_if.hpp"
+#ifndef INCLUDE_ACTION_MOVE_FLY_HPP
+#define INCLUDE_ACTION_MOVE_FLY_HPP
+#include "move.hpp"
 // STL
 #include <iostream>
 
-class Fly : public Action
+class Fly : public Move
 {
 public:
   Fly() {};
@@ -15,4 +15,4 @@ public:
     std::cout << "Execute Fly" << std::endl;
   }
 };
-#endif // INCLUDE_ACTION_FLY_HPP
+#endif // INCLUDE_ACTION_MOVE_FLY_HPP
