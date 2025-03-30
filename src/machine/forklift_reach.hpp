@@ -7,6 +7,5 @@ class ForkliftReach : public Machine
 public:
   ForkliftReach() {};
   ~ForkliftReach() {};
-  void AddAction() override {};
 };
 #endif // INCLUDE_MACHINE_FORKLIFT_REACH_HPP

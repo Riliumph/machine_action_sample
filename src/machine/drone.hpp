@@ -7,6 +7,5 @@ class Drone : public Machine
 public:
   Drone() {};
   ~Drone() {};
-  void AddAction() override {};
 };
 #endif // INCLUDE_MACHINE_DRONE_HPP
